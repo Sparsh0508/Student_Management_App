@@ -9,7 +9,7 @@ const StudentTable = () => {
   const [del, setDelete] = useState(false);
   const [students, setStudent] = useState([]);
   const [selectedStudent, setSelectedStudent] = useState(null);
-  const API = "https://student-management-app-backend.onrender.com";
+  const API = "https://student-management-app-3bbq.onrender.com";
 
   const fetchUrl = async () => {
     try {

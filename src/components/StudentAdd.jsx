@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 
 const StudentAdd = ({ closeModal, editMode = false, studentData }) => {
-  const API = "https://student-management-app-backend.onrender.com";
+  const API = "https://student-management-app-3bbq.onrender.com";
 
   const [sections, setSections] = useState([]);
 

@@ -10,7 +10,7 @@ const SectionTable = () => {
   const [deleteId, setDeleteId] = useState(null);
   const [editData, setEditData] = useState(null);
 
-  const API = "https://student-management-app-backend.onrender.com/sections";
+  const API = "https://student-management-app-3bbq.onrender.com/sections";
   console.log(deleteId);
 
   const fetchSections = async () => {
