@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 
 const SectionForm = ({ close, refresh, editData }) => {
-  const API = "http://localhost:3000/sections";
+  const API = "https://student-management-app-backend.onrender.com/sections";
 
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");

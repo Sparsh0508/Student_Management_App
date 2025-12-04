@@ -27,7 +27,7 @@ const ResultTable = () => {
 
   const fetchResults = async () => {
     try {
-      const res = await fetch("http://localhost:3000/results");
+      const res = await fetch("https://student-management-app-backend.onrender.com/results");
       if (!res.ok) throw new Error("Failed to fetch results");
       const data = await res.json();
       setResults(data);
@@ -55,7 +55,7 @@ const ResultTable = () => {
 
   const confirmDelete = async () => {
     try {
-      await axios.delete(`http://localhost:3000/results/${deleteId}`);
+      await axios.delete(`https://student-management-app-backend.onrender.com/results/${deleteId}`);
       setOpenDelete(false);
       fetchResults();
     } catch (err) {
@@ -64,7 +64,7 @@ const ResultTable = () => {
   };
 
   // const fetchStudents = async () => {
-  //   const res = await fetch("http://localhost:3000/students");
+  //   const res = await fetch("https://student-management-app-backend.onrender.com/students");
   //   const data = await res.json();
   //   setStudents(data);
   // };
@@ -81,7 +81,7 @@ const ResultTable = () => {
     const newResult = { name, subject, marks, grade, examdate };
 
     try {
-      const res = await fetch("http://localhost:3000/results", {
+      const res = await fetch("https://student-management-app-backend.onrender.com/results", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(newResult),
